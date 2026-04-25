@@ -1,1 +1,25 @@
 git init "sirve pa iniciar el repositorio local"
+
+git config --local user.name "jhorman"
+(configura el name del usuario localmente)
+
+git config --local user.email "jhormasantiagomr11@gmail.com"
+(configura el email del usuario asociada a la cuenta de github)
+
+git branch -M main
+(cambiar el name de la rama master a main)
+
+git add .
+(añade todos los archivos al repo)
+
+git commit -m "versión de subida"
+(es la versión que usted esta subiendo al repo)
+
+git push -u origin main
+(este empuja los cambios del repo)
+
+git status
+(comprueba el estado de la rama)
+
+git remote add origin
+(Añade la direccion de su repositorio se hace o ejecuta una unica vez).
