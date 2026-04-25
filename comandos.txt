@@ -1,0 +1,1 @@
+git init "sirve pa iniciar el repositorio local"
