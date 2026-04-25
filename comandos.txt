@@ -22,4 +22,4 @@ git status
 (comprueba el estado de la rama)
 
 git remote add origin
-(Añade la direccion de su repositorio se hace o ejecuta una unica vez).
+(Añade la direccion de su repositorio se hace o ejecuta una unica vez)
