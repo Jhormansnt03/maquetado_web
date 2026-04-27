@@ -23,3 +23,7 @@ git status
 
 git remote add origin
 (Añade la direccion de su repositorio se hace o ejecuta una unica vez)
+
+holaaa
+lola
+a
