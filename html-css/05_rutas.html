@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rutas</title>
+</head>
+<body>
+
+    <h1>Explicacion: Rutas absolutas y Relativas</h1>
+
+    <section>
+        <h2>Rutas absolutas</h2>
+        <!-- ruta completa a un recurso en un servidor externo. La ruta absoluta es la URL completa del recurso, esta bo se modifica segun la ubicacion del archivo actual -->
+        <p>
+            para ir a un sitio, como el catalogo global de repuestos,
+            usamos la URL completa:
+            <a href="https://bike.shimano.com/es-ES/home.html">visitar shimano internacional</a>
+        </p>
+
+        <img src="https://www.manuelweb.net/img/covers/html5-cover.jpg" alt="imagen HTML desde un servidor externo" width="300" height="200" title="HTML 5">
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Rutas relativas</h2>
+        <!-- Ruta relativa a un recurso dentro del mismo proyecto. la ruta relativa se basa en la ubicacion del archivo actual, y se ajusta segun la estructura de carpetas del proyecto -->
+
+        <p>
+            ir a la pagina de <a href="04_inline_inblock.html">inline vs block</a>
+            <!-- funciona si hay un archivo llamado '04_inline_inblock.html' en l misma carpeta. -->
+        </p>
+
+        <p>
+            ver foto de cristiano ronaldo <a href="bicho.jpg">El bicho</a>
+            <!-- funciona si hay una imagen llamada 'bicho.jpg' -->
+        </p>
+    </section>
+
+    
+</body>
+</html>
