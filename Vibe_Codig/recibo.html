@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo Green & Blue Aquamarine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="recibo.css">
+</head>
+<body>
+
+    <button id="btn-save-pdf" class="floating-pdf-btn" onclick="guardarComoPDF()">
+        💾 Guardar como PDF / Imprimir
+    </button>
+
+    <div class="receipt-container">
+        
+        <header class="receipt-header">
+            <div class="brand-block">
+                <div class="logo-container">
+                    <span class="logo-green">GREEN</span>
+                    <span class="logo-ampersand">&</span>
+                    <span class="logo-blue">BLUE</span>
+                    <div class="logo-subtext">aquamarine</div>
+                </div>
+                <div class="slogan-text">Efecto y prevención en la funcionalidad física</div>
+            </div>
+
+            <div class="services-block">
+                <label class="checkbox-label">
+                    REHABILITACIÓN <input type="checkbox" name="servicio" value="rehabilitacion">
+                    <span class="custom-checkbox"></span>
+                </label>
+                <label class="checkbox-label">
+                    ENTRETENIMIENTO <input type="checkbox" name="servicio" value="entretenimiento">
+                    <span class="custom-checkbox"></span>
+                </label>
+                <label class="checkbox-label">
+                    MASAJES <input type="checkbox" name="servicio" value="masajes">
+                    <span class="custom-checkbox"></span>
+                </label>
+                <label class="checkbox-label">
+                    NATACIÓN <input type="checkbox" name="servicio" value="natacion">
+                    <span class="custom-checkbox"></span>
+                </label>
+            </div>
+
+            <div class="meta-block">
+                <div class="contact-info">
+                    <span class="wp-icon"></span> 318 868 8008 / 310 740 6038
+                </div>
+                
+                <div class="dates-container">
+                    <div class="date-box-group">
+                        <span class="date-label">Fecha<br>Inicio</span>
+                        <div class="date-cells">
+                            <input type="text" class="cell-input" maxlength="2">
+                            <input type="text" class="cell-input" maxlength="2">
+                            <input type="text" class="cell-input" maxlength="2">
+                        </div>
+                    </div>
+                    <div class="date-box-group">
+                        <span class="date-label">Fecha<br>Finalización</span>
+                        <div class="date-cells">
+                            <input type="text" class="cell-input" maxlength="2">
+                            <input type="text" class="cell-input" maxlength="2">
+                            <input type="text" class="cell-input" maxlength="2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="receipt-number-box">
+                    <div class="rn-title">RECIBO</div>
+                    <div class="rn-value"><span class="rn-prefix">No.</span> <input type="text" class="receipt-num-input" value="0480" maxlength="6"></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="user-info-section">
+            <div class="form-row row-3-columns">
+                <div class="form-group flex-grow">
+                    <span class="field-label">Señor (es):</span>
+                    <input type="text" class="line-input">
+                </div>
+                <div class="form-group width-35">
+                    <span class="field-label">Dirección:</span>
+                    <input type="text" class="line-input">
+                </div>
+            </div>
+
+            <div class="form-row row-6-columns">
+                <div class="form-group width-25">
+                    <span class="field-label">Teléfono:</span>
+                    <input type="text" class="line-input">
+                </div>
+                <div class="form-group width-20">
+                    <span class="field-label">Ciudad:</span>
+                    <input type="text" class="line-input">
+                </div>
+                <div class="form-group width-12">
+                    <span class="field-label">Edad:</span>
+                    <input type="text" class="line-input text-center">
+                </div>
+                <div class="form-group width-12">
+                    <span class="field-label">Peso:</span>
+                    <input type="text" class="line-input text-center">
+                </div>
+                <div class="form-group width-12">
+                    <span class="field-label">Talla:</span>
+                    <input type="text" class="line-input text-center">
+                </div>
+                <div class="form-group width-15">
+                    <span class="field-label">PPL:</span>
+                    <input type="text" class="line-input">
+                </div>
+            </div>
+        </section>
+
+        <main class="receipt-table-matrix">
+            <div class="matrix-header">
+                <div class="col-description">DESCRIPCIÓN</div>
+                <div class="col-total-val">VR. TOTAL</div>
+            </div>
+            
+            <div class="matrix-body">
+                <div class="description-area">
+                    <textarea class="matrix-textarea" rows="12" placeholder="Escriba aquí el detalle del servicio o concepto..."></textarea>
+                </div>
+                <div class="value-area">
+                    <input type="text" class="matrix-val-input text-right">
+                    <input type="text" class="matrix-val-input text-right">
+                    <input type="text" class="matrix-val-input text-right">
+                    <input type="text" class="matrix-val-input text-right">
+                    <input type="text" class="matrix-val-input text-right">
+                    <input type="text" class="matrix-val-input text-right">
+                    <input type="text" class="matrix-val-input text-right">
+                    <input type="text" class="matrix-val-input text-right">
+                    <input type="text" class="matrix-val-input text-right">
+                </div>
+            </div>
+
+            <div class="matrix-footer">
+                <div class="observations-block">
+                    <div class="obs-label">OBSERVACIONES</div>
+                    <textarea class="obs-textarea" rows="2"></textarea>
+                </div>
+                <div class="total-block">
+                    <div class="total-label">TOTAL</div>
+                    <div class="total-value-wrapper">
+                        <span class="currency-symbol">$</span>
+                        <input type="text" class="total-input text-right">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="receipt-signatures">
+            <div class="signature-box">
+                <div class="signature-line"></div>
+                <div class="signature-title">FIRMA DEL INSTRUCTOR</div>
+            </div>
+            <div class="signature-box">
+                <div class="signature-line"></div>
+                <div class="signature-title">FIRMA DEL USUARIO</div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        function guardarComoPDF() {
+            // Llama a la ventana de impresión nativa optimizada por CSS
+            window.print();
+        }
+    </script>
+</body>
+</html>
