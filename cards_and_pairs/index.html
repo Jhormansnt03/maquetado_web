@@ -8,26 +8,24 @@
 </head>
 <body>
     <div class="contenedorInicio">
-        <h1 class="titulo">parejas ocultas</h1>
-        <h2 class="subTitulo">Bienvenido al juego de parejas ocultas</h2>
-        <h2 class="subTitulo">Como se juega?</h2>
-
+        <h1 class="titulo">Parejas Ocultas</h1>
+        <h2 class="subtitulo">Bienvenido al juego de parejas ocultas</h2>
+        <h2 class="subtitulo">¿Cómo se juega?</h2>
         <ul>
-            <li class="textLista">Elige con cuentas cartas quieres jugar</li>
-            <li class="textLista">Cada carta tiene una pareja, tienes que destapar las parejas</li>
-            <li class="textLista">para encontrar las 12 cartas tienes 30s y para las cartas tienes 1min</li>
+            <li type="none" class="textLista">Eliges con cuantas cartas quieres jugar</li>
+            <li type="none" class="textLista">Cada arta tiene una pareja, tienes que destapar las parejas.</li>
+            <li type="none" class="textLista">Para encontrar las 12 cartas tienes 30 segundos y para las 20 cartas tienes 1 minuto.</li>
+
         </ul>
 
-        <h2 class="subTitulo">Elige la cantidad de cartas:</h2>
-            <div class="contenedorBotonesInicio">
-                <button class="botonesCantidadCartas" data-cantidad="12">12 cartas</button>
-                <button class="botonesCantidadCartas" data-cantidad="20">20 cartas</button>
-            </div>
-
+        <h2 class="subtitulo">Elige la cantidad de cartas:</h2>
+        <div class="contenedorBotonesInicio">
+            <button class="botonesCantidadCartas" data-cantidad="12">12 CARTAS</button>
+            <button class="botonesCantidadCartas" data-cantidad="20">20 CARTAS</button>
+        </div>
     </div>
-
     <div class="contenedorJuego off">
-        <h2 class="titulo">Parejas ocultas</h2>
+        <h2 class="titulo">Parejas Ocultas</h2>
         <section class="tableroJuego20 off">
             <div class="cartas off" id="espacio1"></div>
             <div class="cartas off" id="espacio2"></div>
@@ -50,7 +48,8 @@
             <div class="cartas off" id="espacio19"></div>
             <div class="cartas off" id="espacio20"></div>
         </section>
-        <section class="tableroJuego20 off">
+
+        <section class="tableroJuego12 off">
             <div class="cartas off" id="espacio21"></div>
             <div class="cartas off" id="espacio22"></div>
             <div class="cartas off" id="espacio23"></div>
@@ -65,17 +64,19 @@
             <div class="cartas off" id="espacio32"></div>
         </section>
         <section class="contenedorTiempo">
-            <h2 class="subTitulo">Tiempo:</h2>
+            <h2 class="subtitulo">Tiempo:</h2>
             <div class="textTiempo"></div>
         </section>
     </div>
 
     <div class="contenedorResultado off">
         <h2 class="titulo" id="tituloResultado"></h2>
-        <h2 class="subTitulo">tiempo:</h2>
-        <h2 class="subTitulo" id="tiempoResultado"></h2>
-        <button class="botonReiniciar">volver a jugar</button>
+        <h2 class="subtitulo">Tiempo:</h2>
+        <h2 class="subtitulo" id="tiempoResultado"></h2>
+        <button class="botonReiniciar">Volver a jugar</button>
     </div>
     <script src="card.js"></script>
+
+
 </body>
 </html>
